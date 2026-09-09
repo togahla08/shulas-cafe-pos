@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Shulas Café — Punto de Venta</title>
+<link rel="icon" href="/logo.jpg">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header id="topbar">
+  <button id="btn-home" class="icon-btn" title="Inicio">🏠</button>
+  <img src="/logo.jpg" alt="Shulas Café" id="topbar-logo">
+  <div id="topbar-title"><span id="brand-name">Shulas Café</span><small id="brand-tagline">Café · Restaurante</small></div>
+  <div id="topbar-clock">--:--</div>
+</header>
+
+<main id="screens">
+  <section id="screen-home" class="screen"></section>
+  <section id="screen-tables" class="screen"></section>
+  <section id="screen-order" class="screen"></section>
+  <section id="screen-menu" class="screen"></section>
+  <section id="screen-reports" class="screen"></section>
+  <section id="screen-inventory" class="screen"></section>
+  <section id="screen-expenses" class="screen"></section>
+  <section id="screen-staff" class="screen"></section>
+  <section id="screen-settings" class="screen"></section>
+</main>
+
+<!-- generic modal -->
+<div id="modal-backdrop" class="hidden">
+  <div id="modal-card" role="dialog" aria-modal="true"></div>
+</div>
+
+<div id="toast" class="hidden"></div>
+
+<script src="/printer.js"></script>
+<script src="/app.js"></script>
+<script src="/admin.js"></script>
+</body>
+</html>
